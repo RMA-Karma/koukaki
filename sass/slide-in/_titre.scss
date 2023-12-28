@@ -1,0 +1,70 @@
+.titre-story span{
+  display: flex;
+}
+.titre-histoire-hide {
+  visibility: hidden;
+}
+.titre-histoire-anim {
+  animation: slide-in-bottom 1s linear;
+}
+
+.mot1{
+  display: flex;
+  animation: slide-in-bottom 0.5s linear;
+  padding-right: 13px;
+}
+
+.mot2{
+    display: flex;
+    animation: slide-in-bottom2 0.5s linear;
+  }
+
+
+
+.titre-studio {
+  display: flex;
+  justify-content: center;
+}
+
+.mot3 {
+  padding-right: 15px;
+}
+.mot3-anim {
+  animation: slide-in-bottom 0.5s linear;
+  
+}
+
+.mot4-anim {
+  animation: slide-in-bottom2 0.5s linear;
+}
+
+
+@keyframes slide-in-bottom {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-bottom2 {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+
+    50% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  
+

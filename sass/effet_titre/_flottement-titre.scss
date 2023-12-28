@@ -1,0 +1,45 @@
+.banner img {
+    animation: hello 5s infinite linear;
+    width: 100%;
+  }
+
+@keyframes hello {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+        transform-origin: 1%;
+      }
+    75% {
+        transform: rotate(-5deg);
+      }
+    100% {
+        transform: rotate(0deg);
+      }
+
+  }
+
+  .block-img {
+    z-index: 1;
+    animation: SlideUp 1.5s linear;
+  }
+
+  @keyframes SlideUp {
+
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }

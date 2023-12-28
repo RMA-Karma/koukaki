@@ -1,0 +1,29 @@
+.line1-croix {
+    visibility: hidden;
+}
+
+.line2-croix {
+    rotate: (-45deg) ;
+}
+
+.line3-croix {
+    
+    rotate: (45deg) ;
+    position: absolute;
+    top: 33px;
+    
+}
+
+/* @keyframes rotateCroix1 {
+
+    to {
+        rotate: (45deg);
+    }
+}
+
+@keyframes rotateCroix2 {
+
+    to {
+        rotate: (-45deg);
+    }
+} */

@@ -1,0 +1,28 @@
+.story #place {
+    background-image: url(lieu/Studio_Koukaki-image_place.png) ;
+}
+
+#gros-nuage{
+    position: absolute;
+    filter: blur(15px);
+    left: 70%;
+    bottom: 25%;
+    width: 25%;
+}
+
+#nuage{
+    position: absolute;
+    filter: blur(15px);
+    left: 55%;
+    bottom: 20%;
+    width: 10%;
+}
+
+#place{
+    & h3{
+        z-index: 2;
+    }
+    & p{
+        z-index: 2;
+    }
+}

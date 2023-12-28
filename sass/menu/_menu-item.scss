@@ -1,0 +1,107 @@
+.li-story{
+    &::after{
+    content: url("menu/orchid.png");
+    position: absolute;
+    right: 750px;
+    bottom: 40px;
+    animation: rotation 20s infinite linear;
+}
+    &::before{
+        content: url("menu/Sunflower.png");
+        position: absolute;
+        left: 550px;
+        bottom: 20px;
+        animation: rotation 20s infinite linear;
+    }
+}
+
+.li-place{
+    &::after{
+        content: url("menu/flower.png");
+        position: absolute;
+        right: 550px;
+        bottom: 30px;
+        transform-origin: 50% 45%;
+        animation: rotation 20s infinite linear;
+}
+    &::before{
+        content: url("menu/random_flower.png");
+        position: absolute;
+        left: 700px;
+        bottom: 40px;
+        transform-origin: 50% 45%;
+        animation: rotation-menu 20s infinite linear;
+    }
+}
+
+.li-characters{
+    &::after{
+        content: url("menu/cat.png");
+        position: absolute;
+        right: 550px;
+        bottom: 160px;
+        animation: flotte 2s infinite linear;
+
+}
+    &::before{
+        content: url("menu/Group180.png");
+        position: absolute;
+        left: 600px;
+        top: 140px;
+        animation: flotte 2s infinite linear;
+    }
+}
+
+.li-studio{
+    &::after{
+        content: url("menu/cat(1).png");
+        position: absolute;
+        right: 850px;
+        top : 90px;
+        animation: flotte 2s infinite linear;
+
+}
+    &::before{
+        content: url("menu/Hibiscus.png");
+        position: absolute;
+        left: 900px;
+        top: 180px;
+        animation: rotation-hibiscus 20s infinite linear;
+    }
+}
+@keyframes rotation-menu {
+    from {
+      transform: rotate(0deg) scale(.3);
+    }
+    to {
+      transform: rotate(360deg) scale(.3);
+    }
+  }
+
+  @keyframes rotation-hibiscus {
+    from {
+      transform: rotate(0deg) scale(2.5);
+    }
+    to {
+      transform: rotate(360deg) scale(2.5);
+    }
+  }
+
+  @keyframes flotte {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg) translateX(5px);
+    }
+    50% {
+        transform: rotate(0deg) translateY(5px);
+      }
+    75% {
+        transform: rotate(-5deg);
+      }
+    100% {
+        transform: rotate(0deg);
+      }
+
+  }

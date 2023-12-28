@@ -1,0 +1,56 @@
+@mixin rotate { 
+  animation: rotation 20s infinite linear;
+  animation-delay: calc(var(--scroll) * -20s)
+}
+
+
+.story__article::after {
+  @include rotate;
+}
+
+.titre-story::after {
+  @include rotate;
+  transform-origin: 50% 44%;
+}
+
+.site-footer::after{
+  ::after {
+    @include rotate;
+  transform-origin: 50% 44%;
+  }
+}
+
+.site-footer ul::after{
+  @include rotate;
+}
+
+#colophon {
+&::after{
+  @include rotate;
+  bottom: 70%;
+}
+&::before {
+  @include rotate;
+  
+}
+}
+
+#studio h2 {
+  &::after {
+    @include rotate;
+  }
+  &::before {
+    @include rotate;
+  }
+}
+
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

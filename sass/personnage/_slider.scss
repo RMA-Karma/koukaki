@@ -1,0 +1,37 @@
+
+.swiper-slide img {
+  width: 50%;
+}
+
+.story #characters div {
+  flex : none;
+}
+
+.swiper {
+  overflow: visible !important;
+  width: 50%;
+}
+
+.swiper-3d {
+  & .swiper-slide-shadow-left {
+    background-image: none !important;
+  }
+  & .swiper-slide-shadow-right {
+    background-image: none !important;
+  }
+}
+
+.html2 h3 {
+  background-position: left;
+  text-align: left;
+  padding-left: 50px;
+  display: flex;
+}
+
+.swiper-pagination {
+  position: inherit !important;
+}
+
+.cat-name {
+  padding-top: 30px;
+}

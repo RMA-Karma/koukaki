@@ -1,0 +1,32 @@
+#background-video {
+    object-fit: cover;
+    position: absolute;
+    animation: fadeIn 1s linear;
+    }
+
+.banner {
+        overflow: hidden;
+}
+@media (max-width: 750px) {
+        #background-video { display: none;} 
+        .banner:not(img){
+        animation: fadeIn 1s linear;}}
+
+
+
+@keyframes fadeIn {
+        0% { 
+          opacity: 0; 
+          transform: translateY(-200px);
+          .banner{ background-image: none;}
+        }
+    
+        50% {
+    
+          opacity: 0.25;
+        }
+        100% { 
+          opacity: 1; 
+          transform: translateY(0px);
+        }
+      }
